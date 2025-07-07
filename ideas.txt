@@ -1,0 +1,2 @@
+install tassaract.exe
+pip install flask pytesseract pillow PyMuPDF PyPDF2 openai

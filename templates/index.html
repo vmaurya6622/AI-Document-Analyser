@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI GeM Document Analyzer</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='asus.css') }}">
+</head>
+<body>
+
+  <!-- Background Video -->
+  <video autoplay muted loop playsinline class="background">
+    <source src="{{ url_for('static', filename='thumbnails/background.mp4') }}" type="video/mp4">
+  </video>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h1>🧠 AI GeM Document Analyzer</h1>
+
+    <form id="uploadForm" enctype="multipart/form-data">
+      <label for="fileInput" class="custom-file-upload">
+        📁 Choose Folder
+        <input type="file" id="fileInput" name="pdfs" webkitdirectory directory multiple required />
+      </label>
+      <button type="button" class="button" onclick="uploadAndAnalyze()">Submit Files</button>
+    </form>
+
+    <p id="status"></p>
+    <table id="resultsTable"></table>
+  </div>
+
+  <script src="{{ url_for('static', filename='style.js') }}"></script>
+</body>
+</html>
