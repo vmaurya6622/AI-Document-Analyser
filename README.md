@@ -43,15 +43,15 @@ AI PDF Reviewer/
 
 ### 1. Launch Page
 
-![Launch Screen](./screenshots/1.jpeg)
+![Launch Screen](1.jpeg)
 
 ### 2. Upload and Analyze
 
-![Analyzing Screen](./screenshots/2.jpeg)
+![Analyzing Screen](2.jpeg)
 
 ### 3. Results Display
 
-![Results Table](./screenshots/3.jpeg)
+![Results Table](3.jpeg)
 
 ---
 
